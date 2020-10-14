@@ -16,6 +16,7 @@ track_obj = Track(df=track_df)
 track_processed_dt = track_obj.df.dtypes
 
 # calculate consumption
+track_obj.convert_to_con()
 track_obj.calculate_consumption()
 
 # sort
